@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TrailingDay</string>
+>    <string name="add_cash_bill_title">AddCashBill</string>
+    <string name="action_settings">Settings</string>
+    <string name="bill_number">Enter bill number</string>
+    <string name="bill_amount">Enter bill amount</string>
+    <string name="bill_add">Add</string>
+    <string name="add_card_bill_title">AddCardBill</string>
+    <string name="card_number">Enter last four digits of card</string>
+    <string name="received_amount">Enter received amount</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="datePicker_setButton">Set</string>
+    <string name="datePicker_resetButton">Reset</string>
+    <string name="datePicker_cancelButton">Cancel</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/card_bill_header"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/credit_bill"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cash Bill"
+            android:onClick="navigateToCashBill">
+        </Button>
+        <Button android:id="@+id/date"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right|bottom"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="changeDate">
+        </Button>
+    </LinearLayout>
+
+    <EditText android:id="@+id/card_number"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/card_number" />
+
+    <EditText android:id="@+id/bill_number"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/bill_number" />
+
+    <EditText android:id="@+id/bill_amount"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/bill_amount"/>
+
+    <EditText android:id="@+id/received_amount"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/received_amount"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:text="@string/bill_add"
+        android:onClick="addBill"/>
+</LinearLayout>

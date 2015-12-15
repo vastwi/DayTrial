@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.arvindsv.daytrial" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/add_cash_bill_title"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.AddCashBillActivity"
+            android:label="@string/add_cash_bill_title"
+            android:launchMode="singleTask">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".activities.AddCashBillActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.AddCashBillActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AddCardBillActivity"
+            android:label="@string/add_card_bill_title" >
+        </activity>
+    </application>
+
+</manifest>
